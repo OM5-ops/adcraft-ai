@@ -1,2 +1,3 @@
-# No Python dependencies required for this Render deployment
-# This is a Node.js Vite application and uses package.json/package-lock.json.
+# No Python dependencies required for this Render deployment.
+# This is a Node.js Vite application and uses package.json.
+# Render should deploy this as a Node Web Service, not as a Python app.
