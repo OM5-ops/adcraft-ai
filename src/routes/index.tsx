@@ -105,7 +105,7 @@ function Index() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950">
+   <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950">
       <Toaster richColors />
       <header className="max-w-6xl mx-auto px-6 pt-10 pb-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -145,16 +145,15 @@ function Index() {
             <Field label="Business name *">
               <Input
                 value={form.businessName}
-                onChange={(e) => set("businessName", e.target.value)}
-                placeholder="Acme Coffee"
-              />
+               onChange={(e) => set("businessName", e.target.value)}
+                placeholder="Acme Coffee"  />
             </Field>
             <Field label="Product or service *">
               <Input
                 value={form.productName}
                 onChange={(e) => set("productName", e.target.value)}
                 placeholder="Cold brew starter pack"
-              />
+               />
             </Field>
             <Field label="Category">
               <Input
@@ -175,7 +174,7 @@ function Index() {
                 value={form.tone}
                 onChange={(e) => set("tone", e.target.value)}
                 placeholder="modern, playful, premium…"
-              />
+               />
             </Field>
             <Field label="Offer / promotion">
               <Input
@@ -209,7 +208,7 @@ function Index() {
                 onChange={(e) => handleFiles(e.target.files)}
               />
             </label>
-            {form.imageUrls.length > 0 && (
+                {form.imageUrls.length > 0 && (
               <div className="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-3">
                 {form.imageUrls.map((u) => (
                   <div
@@ -220,8 +219,7 @@ function Index() {
                     <button
                       onClick={() => removeImage(u)}
                       className="absolute top-1 right-1 bg-black/70 hover:bg-black text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition"
-                      aria-label="Remove"
-                    >
+                      aria-label="Remove">
                       <X className="size-3" />
                     </button>
                   </div>
